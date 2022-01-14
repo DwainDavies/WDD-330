@@ -7,3 +7,8 @@ const links = [{
         url: "week2/index.html"
     }
 ]
+function addWorkWeek(){
+    array.forEach(element => {
+        document.getElementById("weekAdd").ariaValueMax;
+    });
+}
