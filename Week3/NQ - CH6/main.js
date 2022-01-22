@@ -1,10 +1,7 @@
 const quiz = [
     { name: "Superman", realName: "Clark Kent" },
     { name: "Wonder Woman", realName: "Diana Prince" },
-    {
-        name: "Batman",
-        realName: "Bruce Wayne"
-    },
+    { name: "Batman", realName: "Bruce Wayne" },
 ];
 
 //Viewing the Object
@@ -24,6 +21,7 @@ const game = {
     start(quiz) {
         this.questions = [...quiz];
         this.score = 0;
+
         // Game Loop - Main
         for (const question of this.questions) {
             this.question = question;

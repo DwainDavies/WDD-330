@@ -11,12 +11,11 @@ const game = {
     start(quiz) {
         this.questions = [...quiz];
         this.score = 0;
-        // main game loop 
+        //Game Loop -  Main 
         for (const question of this.questions) {
             this.question = question;
             this.ask();
         }
-        // end of main game loop 
         this.gameOver();
     },
     ask() {
