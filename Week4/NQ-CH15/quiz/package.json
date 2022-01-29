@@ -1,0 +1,32 @@
+{
+    "name": "ninja-quiz",
+    "version": "1.0.0",
+    "description": "A JavaScript Quiz",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --progress --colors --profile"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Dwain%20Davies/WDD-330.git"
+    },
+    "keywords": [
+        "quiz",
+        "ninja",
+        "javascript"
+    ],
+    "author": "Dwain Davies",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Dwain%20Davies/WDD-330/issues"
+    },
+    "homepage": "https://github.com/Dwain%20Davies/WDD-330#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.2.3",
+        "babel-preset-env": "^1.7.0",
+        "babili-webpack-plugin": "^0.1.2",
+        "webpack": "^5.67.0"
+    }
+}
