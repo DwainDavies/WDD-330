@@ -1,4 +1,4 @@
-const url = 'https://github.com/DwainDavies/WDD-330/tree/master/Week7/questions.json';
+const url = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/questions.json';
 fetch(url)
     .then(res => res.json())
     .then(quiz => {
