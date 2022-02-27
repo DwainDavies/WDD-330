@@ -1,0 +1,223 @@
+    body {
+        padding-left: 2em;
+    }
+    
+    div {
+        width: 150px;
+        height: 60px;
+        background-color: crimson;
+        border-radius: 20px;
+        margin: 50px;
+        text-align: center;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    }
+    /* Transformation */
+    
+    .translation:hover {
+        background-color: orange;
+        transform: translateX(300px);
+    }
+    
+    .scale-big:hover {
+        background-color: yellow;
+        transform: scale(2);
+    }
+    
+    .scale-small:hover {
+        background-color: yellowgreen;
+        transform: scale(0.5);
+    }
+    
+    .rotation:hover {
+        background-color: lightblue;
+        transform: rotate(40deg)
+    }
+    
+    .rotation-reverse:hover {
+        background-color: blue;
+        transform: rotate(-40deg)
+    }
+    
+    .skew:hover {
+        background-color: purple;
+        transform: skew(20deg, 8deg)
+    }
+    /* Transitions */
+    
+    #sm-big-sm:hover {
+        transition: width 2s, height 4s;
+        width: 300px;
+        height: 120px;
+    }
+    
+    #delay:hover {
+        transition-delay: 2s;
+        width: 300px;
+    }
+    
+    #two-trans:hover {
+        transition: width 2s, height 4s, transform 2s;
+        width: 300px;
+        height: 120px;
+    }
+    
+    .transition {
+        background-color: cornflowerblue;
+        transform: translateX(500px);
+        transition-duration: 1000ms;
+    }
+    
+    #ease {
+        transition-timing-function: ease;
+    }
+    
+    #ease-in {
+        transition-timing-function: ease-in;
+    }
+    
+    #ease-out {
+        transition-timing-function: ease-in-out;
+    }
+    
+    #ease-in-out {
+        transition-timing-function: ease-out;
+    }
+    
+    #linear {
+        transition-timing-function: linear;
+    }
+    /* Animation */
+    
+    #play {
+        width: 100px;
+        height: 100px;
+        margin-left: 100px;
+        background-color: purple;
+        border-radius: 50px 50px 50px;
+        position: relative;
+    }
+    
+    .bounce {
+        animation-name: ball;
+        animation-duration: 5000ms;
+    }
+    
+    @keyframes ball {
+        0% {
+            right: 0;
+            animation-timing-function: ease-in
+        }
+        30% {
+            right: 150px;
+            width: 120px;
+            height: 90;
+        }
+        50% {
+            right: -600px;
+            width: 100px;
+            height: 100px;
+            animation-timing-function: ease-in
+        }
+        100% {
+            right: 0;
+            width: 100px;
+            height: 100px;
+            animation-timing-function: ease-in
+        }
+    }
+    
+    #infinite {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: round;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        margin-left: 100px;
+        margin-bottom: 300px;
+        float: left;
+    }
+    
+    #reverse {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        margin-bottom: 300px;
+        margin-left: 500px;
+        animation-name: round;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        float: left;
+    }
+    
+    @keyframes round {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    
+    #get-out {
+        clear: both;
+    }
+    /* Canvas */
+    
+    .myCanvas {
+        width: 200px;
+        height: 200px;
+        border: dotted 2px black;
+    }
+    
+    .demo2 {
+        width: 200px;
+        height: 200px;
+        border: solid 2px black;
+        margin: 0 20px;
+    }
+    
+    .spin {
+        position: absolute;
+        top: 8px;
+        left: 55px;
+    }
+    
+    #rec-fade-circ {
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+    
+    svg polygon {
+        fill: lime;
+        stroke: gold;
+        stroke-width: 5;
+        fill-rule: evenodd;
+        margin-left: 250px;
+    }
