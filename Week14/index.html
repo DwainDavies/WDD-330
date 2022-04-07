@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width initial-scale=1.0">
+    <title>Block 2 Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="data/tree.png"></a>
+        <h1>Block 2 Challenge</h1>
+    </header>
+    <main>
+        <form>
+            <h2>Choose a season to find out if it is a good idea to plant.</h2>
+            <input type="radio" name="season" id="summer" value="Summer"> Summer <br>
+            <input type="radio" name="season" id="winter" value="Winter"> Winter <br>
+            <input type="radio" name="season" id="spring" value="Spring"> Spring <br>
+            <input type="radio" name="season" id="autumn" value="Autumn"> Autumn
+            <br><br>
+            <button type="button" onclick=" checkButton()"> Submit </button>
+
+            <h2 id="disp"> </h2>
+            <h3 id="error"> </h3>
+        </form>
+        <script src="main.js"></script>
+    </main>
+    <footer>
+        <div id="legal">
+            Author: Dwain Davies<br> Copyright &copy; 2022 Dwain Davies<br>
+        </div>
+    </footer>
+</body>
+
+</html>
